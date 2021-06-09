@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <ScrollView
+        android:id="@+id/scrollviewHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:columnCount="2"
+            android:rowCount="4">
+
+            <ImageView
+                android:id="@+id/letsTravel"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="left"
+                android:src="@drawable/lets_travel"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/myBike"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="right"
+                android:src="@drawable/my_bike"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/myCar"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="left"
+                android:src="@drawable/my_car"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/localAssistance"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="right"
+                android:src="@drawable/local_assistance"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/serviceProvider"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="left"
+                android:src="@drawable/service_provider"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/accessories"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="right"
+                android:src="@drawable/accesssories"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/community"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="left"
+                android:src="@drawable/community"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="right"
+                android:src="@drawable/more"
+                tools:ignore="RtlHardcoded" />
+
+        </GridLayout>
+    </ScrollView>
+</FrameLayout>

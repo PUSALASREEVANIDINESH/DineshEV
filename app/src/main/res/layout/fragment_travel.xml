@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TravelFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/travelAppBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/travelTabbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:background="@color/teal_700"
+                app:tabSelectedTextColor="@color/purple_200"
+                app:tabTextColor="@color/white">
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find" />
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share" />
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat" />
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/yourRides"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Rides" />
+            </android.support.design.widget.TabLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/travelViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/travelAppBarLayout" />
+    </RelativeLayout>
+
+</FrameLayout>
